@@ -6,9 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Tables - INKURASI</title>
+        <title>INKURASI MEMBER</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- MDB -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+        rel="stylesheet"
+        />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
@@ -27,7 +36,7 @@
             <!-- Navbar-->
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw mx-2"></i>Jhon Doe</a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><a class="dropdown-item" href="#!">Activity Log</a></li>
@@ -48,23 +57,53 @@
                                 Dashboard
                             </a>
                             <div class="sb-sidenav-menu-heading">Interface</div>
+                            
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Layouts
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Member
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                    <a class="nav-link" href="tables.html"><i class="fa-solid fa-list fa-xs mx-2 mt-1"></i>List</a>
+                                    <a class="nav-link" href="addmember.html"><i class="fa-solid fa-user-plus fa-xs mx-2"></i>Add</a>
                                 </nav>
                             </div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages1" aria-expanded="false" aria-controls="collapsePages1">
+                                <div class="sb-nav-link-icon"><i class="fa fa-list-alt" aria-hidden="true"></i>
+                                </div>
+                               Schedule
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages1" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="schedule.html"><i class="fa-solid fa-list fa-xs mx-2 mt-1"></i>List</a>
+                                    <a class="nav-link" href="addschedule.html"><i class="fa fa-plus mx-2 mt-1" aria-hidden="true"></i></i>Add</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages2" aria-expanded="false" aria-controls="collapsePages2">
+                                <div class="sb-nav-link-icon"><i class="fa fa-level-up" aria-hidden="true"></i>
+                                </div>
+                                Grade
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages2" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="grades.html"><i class="fa-solid fa-list fa-xs mx-2 mt-1"></i>List</a>
+                                    <a class="nav-link" href="addgrades.html"><i class="fa fa-plus mx-2 mt-1" aria-hidden="true"></i></i>Add</a>
+                                </nav>
+                            </div>
+
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages3" aria-expanded="false" aria-controls="collapsePages3">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                                 Pages
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
-                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <div class="collapse" id="collapsePages3" aria-labelledby="headingThree" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
                                         Authentication
@@ -95,9 +134,9 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Charts
                             </a>
-                            <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Tables
+                            <a class="nav-link" href="layout-static.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Static
                             </a>
                         </div>
                     </div>
@@ -110,33 +149,70 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Tables</h1>
+                        <h1 class="mt-4">Table Member</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Tables</li>
+                            <li class="breadcrumb-item active"><i class="fa-solid fa-list fa-xs mx-2 mt-1"></i>Tables</li>
                         </ol>
                         <div class="card mb-4">
                             <div class="card-body">
-                                DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
-                                <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
-                                .
+                                    <li class="my-2"><b>Tambah Data Baru</b> dengan mudah menambahkan data baru ke dalam tabel. Cukup klik tombol "Import" dan isi formulir informasi yang diperlukan.</li>
+                                    <li class="my-2"><b>Impor Data</b> apakah Anda memiliki data yang ingin Anda masukkan? Gunakan opsi "Impor Data" untuk mengunggah file data Anda dan mengintegrasikannya dengan tabel Inkurasi Anda.</li>
+                                    <li class="my-2"><b>Ekspor Data</b> Anda juga dapat membagikan atau menggunakan data ini di tempat lain. Pilih opsi "Ekspor Data" untuk menyimpan tabel dalam format yang berbeda, sesuai dengan kebutuhan Anda.</li>
+                                    <li class="my-2"><b>Unduh Data Tabel</b> Ingin memiliki salinan data yang dapat diakses secara offline? Kami menyediakan opsi "Download" untuk itu.</li>
+
                             </div>
                         </div>
-                        <div class="card mb-4">
-                            <div class="card-header">
+                        <div class="my-2 container-fluid d-flex justify-content-between">
+                            <div class="">
+                                <a href="addmember.html" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Import</a>
+                                <button type="button" class="btn btn-outline-primary" data-mdb-ripple-color="primary"><i class="fa-solid fa-file-export"></i> Export</button>
+                            </div>
+                            <div class="">
+                                <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"><i class="fa-solid fa-download"></i> Download</button>
+                            </div>
+                        </div>
+                        <div class="mt-5 container-fluid d-flex justify-content-between">
+                            <div class="">
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-mdb-toggle="dropdown" aria-expanded="false">
+                                      Dropdown
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                      <li><button class="dropdown-item" type="button">Action</button></li>
+                                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <div class="">
+                                <div class="input-group">
+                                    <div class="form-outline">
+                                      <input id="search-input" type="search" id="form1" class="form-control" />
+                                      <label class="form-label" for="form1">Search</label>
+                                    </div>
+                                    <button id="search-button" type="button" class="btn btn-primary">
+                                      <i class="fas fa-search"></i>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+
+                            <div class="mx-2 my-3">
                                 <i class="fas fa-table me-1"></i>
-                                DataTable Example
+                                Daftar Member
                             </div>
                             <div class="card-body">
-                                <table id="datatablesSimple">
+                                <!-- <table id="datatablesSimple">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
+                                            <th>ID</th>
+                                            <th>Nama</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>Grade</th>
+                                            <th>Status</th>
+                                            <th>Enroll Date</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -147,471 +223,558 @@
                                             <th>Age</th>
                                             <th>Start date</th>
                                             <th>Salary</th>
+                                            <th>Salary</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <tr>
+                                            <td>1</td>
                                             <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>63</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
                                             <td>2011/07/25</td>
-                                            <td>$170,750</td>
                                         </tr>
                                         <tr>
-                                            <td>Ashton Cox</td>
-                                            <td>Junior Technical Author</td>
-                                            <td>San Francisco</td>
-                                            <td>66</td>
-                                            <td>2009/01/12</td>
-                                            <td>$86,000</td>
+                                            <td>2</td>
+                                            <td>Alex Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Cedric Kelly</td>
-                                            <td>Senior Javascript Developer</td>
-                                            <td>Edinburgh</td>
-                                            <td>22</td>
-                                            <td>2012/03/29</td>
-                                            <td>$433,060</td>
+                                            <td>3</td>
+                                            <td>Bendi Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Airi Satou</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>33</td>
-                                            <td>2008/11/28</td>
-                                            <td>$162,700</td>
+                                            <td>4</td>
+                                            <td>Erna Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Brielle Williamson</td>
-                                            <td>Integration Specialist</td>
-                                            <td>New York</td>
-                                            <td>61</td>
-                                            <td>2012/12/02</td>
-                                            <td>$372,000</td>
+                                            <td>5</td>
+                                            <td>Yunita Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Herrod Chandler</td>
-                                            <td>Sales Assistant</td>
-                                            <td>San Francisco</td>
-                                            <td>59</td>
-                                            <td>2012/08/06</td>
-                                            <td>$137,500</td>
+                                            <td>6</td>
+                                            <td>Yudha Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Rhona Davidson</td>
-                                            <td>Integration Specialist</td>
-                                            <td>Tokyo</td>
-                                            <td>55</td>
-                                            <td>2010/10/14</td>
-                                            <td>$327,900</td>
+                                            <td>7</td>
+                                            <td>Rizki Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Colleen Hurst</td>
-                                            <td>Javascript Developer</td>
-                                            <td>San Francisco</td>
-                                            <td>39</td>
-                                            <td>2009/09/15</td>
-                                            <td>$205,500</td>
+                                            <td>8</td>
+                                            <td>Bandu Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Sonya Frost</td>
-                                            <td>Software Engineer</td>
-                                            <td>Edinburgh</td>
-                                            <td>23</td>
-                                            <td>2008/12/13</td>
-                                            <td>$103,600</td>
+                                            <td>9</td>
+                                            <td>Wahyu Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Jena Gaines</td>
-                                            <td>Office Manager</td>
-                                            <td>London</td>
-                                            <td>30</td>
-                                            <td>2008/12/19</td>
-                                            <td>$90,560</td>
+                                            <td>10</td>
+                                            <td>Akbar Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Quinn Flynn</td>
-                                            <td>Support Lead</td>
-                                            <td>Edinburgh</td>
-                                            <td>22</td>
-                                            <td>2013/03/03</td>
-                                            <td>$342,000</td>
+                                            <td>11</td>
+                                            <td>Fathur Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Charde Marshall</td>
-                                            <td>Regional Director</td>
-                                            <td>San Francisco</td>
-                                            <td>36</td>
-                                            <td>2008/10/16</td>
-                                            <td>$470,600</td>
+                                            <td>12</td>
+                                            <td>Hans Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Haley Kennedy</td>
-                                            <td>Senior Marketing Designer</td>
-                                            <td>London</td>
-                                            <td>43</td>
-                                            <td>2012/12/18</td>
-                                            <td>$313,500</td>
+                                            <td>13</td>
+                                            <td>Kenzy Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Tatyana Fitzpatrick</td>
-                                            <td>Regional Director</td>
-                                            <td>London</td>
+                                            <td>14</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
+                                        </tr>
+                                        <tr>
                                             <td>19</td>
-                                            <td>2010/03/17</td>
-                                            <td>$385,750</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Michael Silva</td>
-                                            <td>Marketing Designer</td>
-                                            <td>London</td>
-                                            <td>66</td>
-                                            <td>2012/11/27</td>
-                                            <td>$198,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Paul Byrd</td>
-                                            <td>Chief Financial Officer (CFO)</td>
-                                            <td>New York</td>
-                                            <td>64</td>
-                                            <td>2010/06/09</td>
-                                            <td>$725,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gloria Little</td>
-                                            <td>Systems Administrator</td>
-                                            <td>New York</td>
-                                            <td>59</td>
-                                            <td>2009/04/10</td>
-                                            <td>$237,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Bradley Greer</td>
-                                            <td>Software Engineer</td>
-                                            <td>London</td>
-                                            <td>41</td>
-                                            <td>2012/10/13</td>
-                                            <td>$132,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dai Rios</td>
-                                            <td>Personnel Lead</td>
-                                            <td>Edinburgh</td>
-                                            <td>35</td>
-                                            <td>2012/09/26</td>
-                                            <td>$217,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jenette Caldwell</td>
-                                            <td>Development Lead</td>
-                                            <td>New York</td>
-                                            <td>30</td>
-                                            <td>2011/09/03</td>
-                                            <td>$345,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Yuri Berry</td>
-                                            <td>Chief Marketing Officer (CMO)</td>
-                                            <td>New York</td>
-                                            <td>40</td>
-                                            <td>2009/06/25</td>
-                                            <td>$675,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Caesar Vance</td>
-                                            <td>Pre-Sales Support</td>
-                                            <td>New York</td>
-                                            <td>21</td>
-                                            <td>2011/12/12</td>
-                                            <td>$106,450</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Doris Wilder</td>
-                                            <td>Sales Assistant</td>
-                                            <td>Sidney</td>
-                                            <td>23</td>
-                                            <td>2010/09/20</td>
-                                            <td>$85,600</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Angelica Ramos</td>
-                                            <td>Chief Executive Officer (CEO)</td>
-                                            <td>London</td>
-                                            <td>47</td>
-                                            <td>2009/10/09</td>
-                                            <td>$1,200,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gavin Joyce</td>
-                                            <td>Developer</td>
-                                            <td>Edinburgh</td>
-                                            <td>42</td>
-                                            <td>2010/12/22</td>
-                                            <td>$92,575</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jennifer Chang</td>
-                                            <td>Regional Director</td>
-                                            <td>Singapore</td>
-                                            <td>28</td>
-                                            <td>2010/11/14</td>
-                                            <td>$357,650</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brenden Wagner</td>
-                                            <td>Software Engineer</td>
-                                            <td>San Francisco</td>
-                                            <td>28</td>
-                                            <td>2011/06/07</td>
-                                            <td>$206,850</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Fiona Green</td>
-                                            <td>Chief Operating Officer (COO)</td>
-                                            <td>San Francisco</td>
-                                            <td>48</td>
-                                            <td>2010/03/11</td>
-                                            <td>$850,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Shou Itou</td>
-                                            <td>Regional Marketing</td>
-                                            <td>Tokyo</td>
                                             <td>20</td>
-                                            <td>2011/08/14</td>
-                                            <td>$163,000</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Michelle House</td>
-                                            <td>Integration Specialist</td>
-                                            <td>Sidney</td>
-                                            <td>37</td>
-                                            <td>2011/06/02</td>
-                                            <td>$95,400</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Suki Burks</td>
-                                            <td>Developer</td>
-                                            <td>London</td>
-                                            <td>53</td>
-                                            <td>2009/10/22</td>
-                                            <td>$114,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Prescott Bartlett</td>
-                                            <td>Technical Author</td>
-                                            <td>London</td>
-                                            <td>27</td>
-                                            <td>2011/05/07</td>
-                                            <td>$145,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gavin Cortez</td>
-                                            <td>Team Leader</td>
-                                            <td>San Francisco</td>
-                                            <td>22</td>
-                                            <td>2008/10/26</td>
-                                            <td>$235,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Martena Mccray</td>
-                                            <td>Post-Sales support</td>
-                                            <td>Edinburgh</td>
-                                            <td>46</td>
-                                            <td>2011/03/09</td>
-                                            <td>$324,050</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Unity Butler</td>
-                                            <td>Marketing Designer</td>
-                                            <td>San Francisco</td>
-                                            <td>47</td>
-                                            <td>2009/12/09</td>
-                                            <td>$85,675</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Howard Hatfield</td>
-                                            <td>Office Manager</td>
-                                            <td>San Francisco</td>
-                                            <td>51</td>
-                                            <td>2008/12/16</td>
-                                            <td>$164,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Hope Fuentes</td>
-                                            <td>Secretary</td>
-                                            <td>San Francisco</td>
-                                            <td>41</td>
-                                            <td>2010/02/12</td>
-                                            <td>$109,850</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vivian Harrell</td>
-                                            <td>Financial Controller</td>
-                                            <td>San Francisco</td>
-                                            <td>62</td>
-                                            <td>2009/02/14</td>
-                                            <td>$452,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Timothy Mooney</td>
-                                            <td>Office Manager</td>
-                                            <td>London</td>
-                                            <td>37</td>
-                                            <td>2008/12/11</td>
-                                            <td>$136,200</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jackson Bradshaw</td>
-                                            <td>Director</td>
-                                            <td>New York</td>
-                                            <td>65</td>
-                                            <td>2008/09/26</td>
-                                            <td>$645,750</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Olivia Liang</td>
-                                            <td>Support Engineer</td>
-                                            <td>Singapore</td>
-                                            <td>64</td>
-                                            <td>2011/02/03</td>
-                                            <td>$234,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Bruno Nash</td>
-                                            <td>Software Engineer</td>
-                                            <td>London</td>
-                                            <td>38</td>
-                                            <td>2011/05/03</td>
-                                            <td>$163,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sakura Yamamoto</td>
-                                            <td>Support Engineer</td>
-                                            <td>Tokyo</td>
-                                            <td>37</td>
-                                            <td>2009/08/19</td>
-                                            <td>$139,575</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Thor Walton</td>
-                                            <td>Developer</td>
-                                            <td>New York</td>
-                                            <td>61</td>
-                                            <td>2013/08/11</td>
-                                            <td>$98,540</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Finn Camacho</td>
-                                            <td>Support Engineer</td>
-                                            <td>San Francisco</td>
-                                            <td>47</td>
-                                            <td>2009/07/07</td>
-                                            <td>$87,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Serge Baldwin</td>
-                                            <td>Data Coordinator</td>
-                                            <td>Singapore</td>
-                                            <td>64</td>
-                                            <td>2012/04/09</td>
-                                            <td>$138,575</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Zenaida Frank</td>
-                                            <td>Software Engineer</td>
-                                            <td>New York</td>
-                                            <td>63</td>
-                                            <td>2010/01/04</td>
-                                            <td>$125,250</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Zorita Serrano</td>
-                                            <td>Software Engineer</td>
-                                            <td>San Francisco</td>
-                                            <td>56</td>
-                                            <td>2012/06/01</td>
-                                            <td>$115,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jennifer Acosta</td>
-                                            <td>Junior Javascript Developer</td>
-                                            <td>Edinburgh</td>
-                                            <td>43</td>
-                                            <td>2013/02/01</td>
-                                            <td>$75,650</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cara Stevens</td>
-                                            <td>Sales Assistant</td>
-                                            <td>New York</td>
-                                            <td>46</td>
-                                            <td>2011/12/06</td>
-                                            <td>$145,600</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Hermione Butler</td>
-                                            <td>Regional Director</td>
-                                            <td>London</td>
-                                            <td>47</td>
-                                            <td>2011/03/21</td>
-                                            <td>$356,250</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Lael Greer</td>
-                                            <td>Systems Administrator</td>
-                                            <td>London</td>
                                             <td>21</td>
-                                            <td>2009/02/27</td>
-                                            <td>$103,500</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Jonas Alexander</td>
-                                            <td>Developer</td>
-                                            <td>San Francisco</td>
-                                            <td>30</td>
-                                            <td>2010/07/14</td>
-                                            <td>$86,500</td>
+                                            <td>22</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Shad Decker</td>
-                                            <td>Regional Director</td>
-                                            <td>Edinburgh</td>
-                                            <td>51</td>
-                                            <td>2008/11/13</td>
-                                            <td>$183,000</td>
+                                            <td>23</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Michael Bruce</td>
-                                            <td>Javascript Developer</td>
-                                            <td>Singapore</td>
-                                            <td>29</td>
-                                            <td>2011/06/27</td>
-                                            <td>$183,000</td>
+                                            <td>24</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                         <tr>
-                                            <td>Donna Snider</td>
-                                            <td>Customer Support</td>
-                                            <td>New York</td>
-                                            <td>27</td>
-                                            <td>2011/01/25</td>
-                                            <td>$112,000</td>
+                                            <td>25</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>26</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>emailmember@gmail.com</td>
+                                            <td>08xxxxxxxx</td>
+                                            <td>1</td>
+                                            <td>Anggota</td>
+                                            <td>2011/07/25</td>
                                         </tr>
                                     </tbody>
-                                </table>
+                                </table> -->
+                            </div>
+                        <!-- </div>
+                    </div>
+                </main> -->
+<!-- 
+                <div class="container mt-2">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-6 item">
+                          <div class="card item-card card-block">
+                        <img class="img-card" src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="Photo of sunset">
+                            <h5 class="item-card-title mx-2 mt-3 mb-3">Sierra Web Development • Owner</h5>
+                            <p class="card-text mx-2">This is a company that builds websites, web apps and e-commerce solutions.</p> 
+                      </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 item">
+                          <div class="card item-card card-block">
+                        <img class="img-card" src="https://static.pexels.com/photos/7357/startup-photos.jpg" alt="Photo of sunset">
+                            <p class="card-title fw-bold fs-5 mx-2 mt-3 mb-3">ProVyuh</p>
+                            <p class="card-text mx-2">This is a company that builds websites, web .</p> 
+                      </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 item">
+                          <div class="card item-card card-block">
+                        <img class="img-card" src="https://static.pexels.com/photos/262550/pexels-photo-262550.jpeg" alt="Photo of sunset">
+                            <h5 class="card-title fw-bold mx-2 mt-3 mb-3">ProVyuh</h5>
+                            <p class="card-text mx-2">This is a company that builds websites, web apps and e-commerce solutions.</p> 
+                      </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 item">
+                          <div class="card item-card card-block">
+                        <img class="img-card" src="https://static.pexels.com/photos/326424/pexels-photo-326424.jpeg" alt="Photo of sunset">
+                            <h5 class="card-title fw-bold mx-2 mt-3 mb-3">ProVyuh</h5>
+                            <p class="card-text mx-2">This is a company that builds websites, web apps and e-commerce solutions.</p> 
+                      </div>
+                        </div>    
+                      </div>
+                </div> -->
+                
+                <div class="container mt-5">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-4 item">
+                            <div class="card float-right">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <img class="d-block w-100" src="https://picsum.photos/150?image=641" alt="">
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="card-block">
+                                          <p>Copy paste the HTML and CSS.</p>
+                                          <p class="fa-xs my-2">Copy paste the HTML and CSS.</p>
+                                      <br>
+                                      <div class="d-flex justify-content-center p-4">
+                                            <a href="#" class="btn btn-primary btn-sm float-left -mt-5">Read More</a>
+                                      </div>
+                                    </div>
+                                </div>
+                           
+                                </div>
+                              </div>
+                        </div>  
+                        <div class="col-sm-6 col-md-4 item">
+                            <div class="card float-right">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <img class="d-block w-100" src="https://picsum.photos/150?image=641" alt="">
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="card-block">
+                                          <p>Copy paste the HTML and CSS.</p>
+                                          <p class="fa-xs my-2">Copy paste the HTML and CSS.</p>
+                                      <br>
+                                      <div class="d-flex justify-content-center p-4">
+                                            <a href="#" class="btn btn-primary btn-sm float-left -mt-5">Read More</a>
+                                      </div>
+                                    </div>
+                                </div>
+                           
+                                </div>
+                              </div>
+                        </div>     
+                        <div class="col-sm-6 col-md-4 item">
+                            <div class="card float-right">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <img class="d-block w-100" src="https://picsum.photos/150?image=641" alt="">
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="card-block">
+                                          <p>Copy paste the HTML and CSS.</p>
+                                          <p class="fa-xs my-2">Copy paste the HTML and CSS.</p>
+                                      <br>
+                                      <div class="d-flex justify-content-center p-4">
+                                            <a href="#" class="btn btn-primary btn-sm float-left -mt-5">Read More</a>
+                                      </div>
+                                    </div>
+                                </div>
+                           
+                                </div>
+                              </div>
+                        </div>     
+                      </div>
+                </div>
+                <div class="container mt-5">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-4 item">
+                            <div class="card float-right">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <img class="d-block w-100" src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="">
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="card-block">
+                                          <p>Copy paste the HTML and CSS.</p>
+                                          <p class="fa-xs my-2">Copy paste the HTML and CSS.</p>
+                                      <br>
+                                      <div class="d-flex justify-content-center p-4">
+                                            <a href="#" class="btn btn-primary btn-sm float-left -mt-5">Read More</a>
+                                      </div>
+                                    </div>
+                                </div>
+                           
+                                </div>
+                              </div>
+                        </div>  
+                        <div class="col-sm-6 col-md-4 item">
+                            <div class="card float-right">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <img class="d-block w-100" src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="">
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="card-block">
+                                          <p>Copy paste the HTML and CSS.</p>
+                                          <p class="fa-xs my-2">Copy paste the HTML and CSS.</p>
+                                      <br>
+                                      <div class="d-flex justify-content-center p-4">
+                                            <a href="#" class="btn btn-primary btn-sm float-left -mt-5">Read More</a>
+                                      </div>
+                                    </div>
+                                </div>
+                           
+                                </div>
+                              </div>
+                        </div>     
+                        <div class="col-sm-6 col-md-4 item">
+                            <div class="card float-right">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <img class="d-block w-100" src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="">
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="card-block">
+                                          <p>Copy paste the HTML and CSS.</p>
+                                          <p class="fa-xs my-2">Copy paste the HTML and CSS.</p>
+                                      <br>
+                                      <div class="d-flex justify-content-center p-4">
+                                            <a href="#" class="btn btn-primary btn-sm float-left -mt-5">Read More</a>
+                                      </div>
+                                    </div>
+                                </div>
+                           
+                                </div>
+                              </div>
+                        </div>     
+                      </div>
+                </div>
+                <div class="container mt-5">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-4 item">
+                            <div class="card float-right">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <img class="d-block w-100" src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="">
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="card-block">
+                                          <p>Copy paste the HTML and CSS.</p>
+                                          <p class="fa-xs my-2">Copy paste the HTML and CSS.</p>
+                                      <br>
+                                      <div class="d-flex justify-content-center p-4">
+                                            <a href="#" class="btn btn-primary btn-sm float-left -mt-5">Read More</a>
+                                      </div>
+                                    </div>
+                                </div>
+                           
+                                </div>
+                              </div>
+                        </div>  
+                        <div class="col-sm-6 col-md-4 item">
+                            <div class="card float-right">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <img class="d-block w-100" src="https://picsum.photos/150?image=641" alt="">
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="card-block">
+                                          <p>Copy paste the HTML and CSS.</p>
+                                          <p class="fa-xs my-2">Copy paste the HTML and CSS.</p>
+                                      <br>
+                                      <div class="d-flex justify-content-center p-4">
+                                            <a href="#" class="btn btn-primary btn-sm float-left -mt-5">Read More</a>
+                                      </div>
+                                    </div>
+                                </div>
+                           
+                                </div>
+                              </div>
+                        </div>     
+                        <div class="col-sm-6 col-md-4 item">
+                            <div class="card float-right">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <img class="d-block w-100" src="https://picsum.photos/150?image=641" alt="">
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="card-block">
+                                          <p>Copy paste the HTML and CSS.</p>
+                                          <p class="fa-xs my-2">Copy paste the HTML and CSS.</p>
+                                      <br>
+                                      <div class="d-flex justify-content-center p-4">
+                                            <a href="#" class="btn btn-primary btn-sm float-left -mt-5">Read More</a>
+                                      </div>
+                                    </div>
+                                </div>
+                           
+                                </div>
+                              </div>
+                        </div>     
+                      </div>
+                </div>
+
+                <!-- <main>
+                    <section id="cards">
+                        <div class="container py-2">
+                            <div class="row pb-4">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                                    <div class="card shadow-lg border-0">
+                                        <div class="card-body">
+                                            <div class="user-picture">
+                                                <img src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="shadow-sm rounded-circle" height="130" width="130" />
+                                            </div>
+                                            <div class="user-content">
+                                                <h5 class="text-capitalize user-name">Carry Johnshon</h5>
+                                                <p class=" text-capitalize text-muted small blockquote-footer">Web developer</p>
+                                                <div class="small">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                    <i class="fas fa-star text-light"></i>
+                                                </div>
+                                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo harum repellendus aut itaque. Temporibus quaerat dolores ut, cupiditate molestiae commodi! Distinctio praesentium, debitis aut minima doloribus earum
+                                                    quia commodi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                                    <div class="card shadow-lg border-0">
+                                        <div class="card-body">
+                                            <div class="user-picture">
+                                                <img src="https://images.unsplash.com/photo-1582003457856-20898dd7e1ea?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="shadow-sm rounded-circle" height="130" width="130" />
+                                            </div>
+                                            <div class="user-content">
+                                                <h5 class="text-capitalize user-name">Alex Carry</h5>
+                                                <p class=" text-capitalize text-muted small blockquote-footer">Web developer</p>
+                                                <div class="small">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                    <i class="fas fa-star text-light"></i>
+                                                    <i class="fas fa-star text-light"></i>
+                                                </div>
+                                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo harum repellendus aut itaque. Temporibus quaerat dolores ut, cupiditate molestiae commodi! Distinctio praesentium, debitis aut minima doloribus earum
+                                                    quia commodi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                                    <div class="card shadow-lg border-0">
+                                        <div class="card-body">
+                                            <div class="user-picture">
+                                                <img src="https://images.unsplash.com/photo-1492447166138-50c3889fccb1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="shadow-sm rounded-circle" height="130" width="130" />
+                                            </div>
+                                            <div class="user-content">
+                                                <h5 class="text-capitalize user-name">John Smith</h5>
+                                                <p class=" text-capitalize text-muted small blockquote-footer">Web developer</p>
+                                                <div class="small">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                </div>
+                                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo harum repellendus aut itaque. Temporibus quaerat dolores ut, cupiditate molestiae commodi! Distinctio praesentium, debitis aut minima doloribus earum
+                                                    quia commodi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </main>
+                </div>
+        </main> -->
+
+
+
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
@@ -630,5 +793,10 @@
         <script src="js/scripts.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="js/datatables-simple-demo.js"></script>
+        <!-- MDB -->
+        <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+        ></script>
     </body>
 </html>
